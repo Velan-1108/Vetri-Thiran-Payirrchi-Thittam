@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 60px auto;
+}
+
+/* Welcome */
+.welcome {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.brand-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 38px;
+    color: #26354d;
+}
+
+.welcome p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #667085;
+}
+
+/* Input card */
+.control-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.control-card label {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#task,
+#inputText {
+    width: 100%;
+    border: 1px solid #d5d9e2;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 16px;
+    font-family: inherit;
+    background: white;
+}
+
+#task {
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#inputText {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#inputText:focus,
+#task:focus {
+    outline: none;
+    border-color: #4285f4;
+}
+
+/* Main button */
+#submitBtn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 9px;
+    background: #4285f4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+    background: #3367d6;
+}
+
+#submitBtn:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+/* Result */
+.result {
+    margin-top: 25px;
+}
+
+/* Normal answer */
+.answer-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+}
+
+/* Loading */
+.loading {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+/* Quiz */
+.quiz-container {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-title {
+    text-align: center;
+    color: #26354d;
+    margin-top: 0;
+}
+
+.quiz-question {
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.quiz-question:last-child {
+    border-bottom: none;
+}
+
+.question-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #f1f5ff;
+}
+
+.option input {
+    cursor: pointer;
+}
+
+.check-answer {
+    margin-top: 15px;
+    padding: 9px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #4285f4;
+    color: white;
+    cursor: pointer;
+}
+
+.correct-option {
+    background: #dff5e5;
+}
+
+.wrong-option {
+    background: #fde2e2;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.feedback.correct {
+    color: #16803c;
+}
+
+.feedback.wrong {
+    color: #dc3545;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+    }
+
+    .control-card,
+    .quiz-container {
+        padding: 20px;
+    }
+
+    #submitBtn {
+        width: 100%;
+    }
+}

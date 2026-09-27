@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <div class="brand-icon">🎓</div>
+
+            <h1>Welcome to EduGenie 🧠✨</h1>
+
+            <p>Your personal AI tutor for learning support!</p>
+        </section>
+
+
+        <!-- Input Section -->
+        <section class="control-card">
+
+            <label for="task">Choose a Task</label>
+
+            <select id="task">
+                <option value="qa">Ask a Question</option>
+                <option value="explain">Explain Simply</option>
+                <option value="quiz">Generate Quiz</option>
+                <option value="summarize">Summarize</option>
+                <option value="learn">Learning Recommendations</option>
+            </select>
+
+            <textarea
+                id="inputText"
+                placeholder="Enter your question or topic here..."
+            ></textarea>
+
+            <button id="submitBtn">
+                Ask EduGenie
+            </button>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section id="result" class="result"></section>
+
+    </main>
+
+
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
